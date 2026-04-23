@@ -70,9 +70,10 @@
    :path_subs nil
    :client_on_load true
 
-   :filetypes [:clojure :elixir :fennel :janet :javascript :hy :julia :racket :scheme
+   :filetypes [:c :clojure :elixir :fennel :janet :javascript :hy :julia :racket :scheme
                :lua :lisp :python :ruby :rust :sql :typescript :php :r]
-   :filetype {:clojure :conjure.client.clojure.nrepl
+   :filetype {:c :conjure.client.c.cling
+              :clojure :conjure.client.clojure.nrepl
               :elixir :conjure.client.elixir.stdio
               :fennel :conjure.client.fennel.nfnl
               :janet :conjure.client.janet.netrepl
